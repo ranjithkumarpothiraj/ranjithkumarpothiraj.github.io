@@ -1,7 +1,168 @@
-h1{
-    text-align: center;
+* {
     font-family: '';
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
+
+body {
+    margin: 0;
+    background-color: #e6e6e6;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.main {
+    display: flex;
+    height: 100vh;
+}
+
+.sidebar {
+    height: 100%;
+    background: #29253F;
+    width: 20%;
+    overflow-y: auto;
+}
+
+.sidebar .menu {
+    list-style-type: none;
+    margin: 0;
+    padding-inline-start: 0;
+    padding: 20px 0px;
+}
+
+.sidebar .profile-image {
+    padding: 50px 0px 30px 0px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: contain;
+    background-size: cover;
+    margin: auto;
+}
+
+.sidebar .profile-image img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.sidebar .menu .link {
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    padding: 30px 10px;
+}
+
+.sidebar .menu .link:hover {
+    cursor: pointer;
+}
+
+.sidebar .menu .link.active:hover {
+    cursor: default;
+}
+
+
+.sidebar .menu .link.active {
+    background-color: #e6e6e6;
+    color: #29253F;
+    font-weight: bold;
+}
+
+.content {
+    background-color: #e6e6e6;
+    padding: 0px 30px;
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    margin-bottom: 60px;
+}
+
+.content p {
+    text-align: center;
+    line-height: 2;
+    padding: 10px;
+    font-style: oblique;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+.content p.tag {
+    text-align: unset;
+    padding: 0;
+}
+
+.skills {
+    margin: auto;
+}
+
+.skills .technical,
+.skills .soft {
+    display: flex;
+    justify-content: center;
+    column-gap: 15px;
+    flex-wrap: wrap;
+}
+
+.skills .languages {
+    margin-bottom: 60px;
+}
+
+.skills p.tag {
+    text-align: center;
+    background: #29253F;
+    color: white;
+    padding: 3px 20px;
+    border-radius: 30px;
+    font-size: 14px;
+}
+
+.content #about {
+    width: 60%;
+    margin: auto;
+}
+
+section h3 {
+    margin-top: 60px !important;
+    text-transform: uppercase;
+    font-size: 18px !important;
+}
+
+section h3::after {
+    display: block;
+    content: '';
+    border-bottom: 2px solid #000;
+    width: 100px;
+    margin: 10px auto 0 auto;
+}
+
+
+/* For WebKit based browsers */
+::-webkit-scrollbar {
+    width: 10px;
+    /* Width of the scrollbar */
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: white;
+    /* Color of the scrollbar thumb */
+    border-radius: 2px;
+    /* Round the corners of the thumb */
+}
+
+::-webkit-scrollbar-track {
+    background-color: #29253F;
+    /* Color of the scrollbar track */
+}
+
+/* Optional: Handle on hover state */
+::-webkit-scrollbar-thumb:hover {
+    background-color: #2980b9;
+    /* Change color on hover */
+}
+
+
+/* https://img.freepik.com/premium-vector/floral-pattern-transparent-background-black-outline-flowers-seamless-vector-pattern_657282-345.jpg */
